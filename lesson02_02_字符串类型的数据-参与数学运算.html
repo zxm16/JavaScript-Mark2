@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    //数学运算符：加号比较特殊，遇见字符串就是所谓的连字符
+    console.log("张吃饭" + "123"); // => 张吃饭123
+    console.log("张吃饭" + "小李"); // => 张吃饭小李
+    //字符串和减、乘、除、取余进行数学运算的时候，字符串要隐式转换为数字参与运算
+    console.log(Number('')); // => 0
+    console.log(Number('张吃饭')); // =>NaN
+    console.log(Number('张吃饭123')); // =>NaN
+    console.log(Number('123')); // =>123
+    console.log(Number('123xc')); // =>NaN
+    //字符串的运算
+    console.log("666" - 100); // => 566
+    console.log("" * 99); // =>0
+    console.log("张吃饭" / 333); // => NaN
+    console.log("123张吃饭" / 333); // => NaN
+</script>
