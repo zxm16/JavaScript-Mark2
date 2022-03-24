@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+  //其他类型的数据隐式转换为数字
+  //基本数据类型：Number、Boolean、Undefined、Null、String
+  console.log(Number(true)); // => 1
+  console.log(Number(false)); // => 0
+  console.log(Number(undefined)); // => NaN
+  console.log(Number(null)); // => 0
+  //其他类型的数据参与数学运算（不包含字符串）
+  console.log(true + 66); // => 67
+  console.log(false * 88); // => 0
+  console.log(undefined / 33); // => NaN
+  console.log(null + 33); // => 33
+  console.log(null + true); // => 1
+</script>
