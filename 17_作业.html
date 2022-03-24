@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    //题一：
+    console.log((234*(23+214)/(568-129))-11*(235-24)); // => -2194.6719817767653
+    //题二：
+    var y = prompt("输入你的税前工资"); // =>输入为10
+    var x;
+    var z = parseFloat(y);
+    x = z * 0.1 * 2;
+    console.log(x);// =>输出为2
+    //题三：
+    var x01 = Math.pow(5, 7);
+    var y01 = (23 + x01)/45;
+    var z01 = Math.pow(y01, 2);
+    console.log(z01); // =>输出为：3015856.7427160493
+    //题四：
+    var x02 = parseFloat(prompt("底面半径为：")); // =>输入半径为5
+    var y02 = parseFloat(prompt("高为：")); //输入高为5
+    var V = (1 / 3) * Math.PI * Math.pow(x02, 2) * y02;
+    console.log(V); // =>130.89969389957471
+    //题五：
+    var x03 = parseInt(prompt("请输入一个三位数")); // =>输入999
+    var y03 =( x03 - (x03 % 100)) / 100;
+    var z03 = ((x03 % 100) - (x03 % 10)) / 10;
+    var e03 = x03 % 10;
+    var sum = y03 + z03 + e03;
+    console.log(sum); //输出27
+</script>
