@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+</html>
+<script>
+    //其它类型数据：这是由于其它类型数据参与逻辑运算时，浏览器中解析器会自动的将这些数据隐式转换为布尔值参与
+    //浏览器自动将其他类型数据隐式转换为布尔值（通过Boolean内置函数实现的）
+    //数字类型隐式转换为布尔值
+    console.log(Boolean(0)); // =>false
+    console.log(Boolean(1)); // =>true
+    console.log(Boolean(-999)); // =>true
+    console.log(Boolean(Infinity)); // =>true
+    console.log(Boolean(NaN)); // =>false
+    console.log(Boolean(1.23)); // =>true
+    //字符串类型隐式转换为布尔值
+    console.log(Boolean("")); // =>false
+    console.log(Boolean(" ")); // =>true
+    console.log(Boolean("123")); // =>true
+    //Undefind类型隐式转换为布尔值
+    console.log(Boolean(undefined)); // =>false
+    //Null类型隐式转换为布尔值
+    console.log(Boolean(null)); // =>false
+    //逻辑与：
+    //开关闭合：如果A灯泡亮了，电流流到B，结果为B
+    //        如果A灯泡坏了，电流流到A，结果为A
+    console.log(0 && 99); // =>0
+    console.log(11 && 99); // =>99
+    console.log(NaN && Infinity); // =>NaN
+    console.log(null && undefined); // =>null
+    console.log("离" && "我"); // =>我
+    console.log("" && "我"); // =>""
+    //逻辑或
+    // 开关闭合：如果A灯泡亮了，电流会留在A，结果为A
+    //         如果A灯泡坏了，电流流到B，结果为B
+    console.log(0 || NaN); // =>NaN
+    console.log(123 || 456); // =>123
+    console.log(123 || 0); // =>123
+    console.log(0 || 123); // =>0
+    console.log("" || Infinity); // =>Infinity
+    console.log(undefined || "张吃饭") // =>  "张吃饭"
+
+    //提高
+    console.log(3 > 6 && 99 < 22); // =>false
+    console.log(3 < 6 && "99 < 22"); // =>"99 < 22"
+    console.log(3 < 6 || "99 < 22"); // =>true
+    console.log(3 > 6 || 99 > 22); // =>true
+</script>
