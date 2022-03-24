@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    //其他类型的数据也可以参与比较运算
+    //浏览器中的解释器，自动将其他类型的数据隐式转换为数字参与比较
+    console.log(true > 999); // => false
+    console.log(true === 1); // => false
+    console.log(true == 1); // => true
+    console.log(true > false); // => true
+    console.log(undefined != 444); // => true
+    console.log(undefined > 444); // => false
+    console.log(undefined != NaN); // => true
+    console.log(null > 999); // => false
+</script>
