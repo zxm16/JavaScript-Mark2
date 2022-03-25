@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    //其他类型数据和字符串进行对比
+    console.log(123 > "666"); // =>false
+    console.log(true > "666"); // =>false
+    console.log(false > "-9"); // =>true
+    console.log(undefined > "666"); // =>false
+    console.log(null > "666"); // =>false
+    console.log(undefined === "张吃饭") // =>false
+    //字符串和字符串进行对比：通过ASCII码数值来进行对比
+    console.log("2b" > "3c"); // => false
+    console.log("ab" > "aac"); // => true
+    console.log("12306EEE" > "12306aaa"); // => false
+    console.log("张吃饭" > "张吃饭"); // => true
+    console.log("张吃饭" > "张吃饭了"); // => false
+</script>
