@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let sex = prompt("请输入你的性别（男/女）：");
+    let age = parseInt(prompt("请输入你现在的年龄："));
+    if (sex === "男"){
+        if (age >= 22){
+            alert("你现在到了适婚年龄了");
+        }else{
+            let x = 22 - age;
+            alert("你现在还未到适婚年龄,距离适婚还有" + x +"年");
+        }
+    }else if (sex === "女"){
+        if(age >= 18){
+            alert("你现在到了适婚年龄了");
+        }else {
+            let x = 18 - age;
+            alert("你现在还未到适婚年龄,距离适婚还有" + x +"年");
+        }
+    }
+</script>
