@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+</html>
+<script>
+    //用户输入月份
+    //注意：prompt提示框赋值给变量的数据都为字符串类型
+    let month = parseInt(prompt("请输入你想知道的月份："));
+    switch (month){
+        case 1:
+            alert("有31天");
+            break;
+        case 4 :
+            alert("有30天");
+            break;
+        case 2:
+            alert("有28或者29天");
+            break;
+        default:
+        	alert("其余暂未收录");
+            break;
+    }
+</script>
