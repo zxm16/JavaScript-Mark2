@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    for (var i = 100 ; i < 1000; i++){
+        let x = i % 10;
+        let y = ((i % 100) - x) / 10;
+        let z = (i - (i % 100)) / 100;
+        let num = Math.pow(x, 3) + Math.pow(y, 3) + Math.pow(z, 3);
+        if (num === i){
+            document.write(i + "<br>");
+        }
+    }
+</script>
